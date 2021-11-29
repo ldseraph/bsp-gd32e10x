@@ -3,7 +3,7 @@ import os
 ARCH       = 'arm'
 CPU        = 'cortex-m4'
 CROSS_TOOL = 'gcc'
-PLATFORM   = 'gcc'
+PLATFORM   = '$(PLATFORM)'
 EXEC_PATH  = '$(EXEC_PATH)'
 BUILD      = 'release'
 

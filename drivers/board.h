@@ -13,8 +13,6 @@
 
 #include <gd32e10x.h>
 
-#include "drv_gpio.h"
-
 #define GD32_SRAM_SIZE         32 // or 20
 #define GD32_SRAM_END          (0x20000000 + GD32_SRAM_SIZE * 1024)
 

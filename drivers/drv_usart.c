@@ -11,7 +11,6 @@
 #include <drv_usart.h>
 #include <board.h>
 
-
 #if !defined(BSP_USING_UART0) && !defined(BSP_USING_UART1) && \
     !defined(BSP_USING_UART2) && !defined(BSP_USING_UART3) && \
     !defined(BSP_USING_UART4)

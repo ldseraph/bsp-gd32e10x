@@ -57,7 +57,7 @@ void rt_hw_board_init()
     SystemClock_Config();
 
     rt_components_board_init();
-
+    gd32_hw_usart_init();
     rt_console_set_device("uart1");
 
 #ifdef BSP_USING_SDRAM

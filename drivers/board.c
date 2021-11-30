@@ -56,13 +56,9 @@ void rt_hw_board_init()
 
     SystemClock_Config();
 
-#ifdef RT_USING_COMPONENTS_INIT
     rt_components_board_init();
-#endif
 
-#ifdef RT_USING_CONSOLE
-    rt_console_set_device(RT_CONSOLE_DEVICE_NAME);
-#endif
+    rt_console_set_device("uart1");
 
 #ifdef BSP_USING_SDRAM
     rt_system_heap_init((void *)EXT_SDRAM_BEGIN, (void *)EXT_SDRAM_END);

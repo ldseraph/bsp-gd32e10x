@@ -11,7 +11,6 @@
 #include <drv_usart.h>
 #include <board.h>
 
-#ifdef RT_USING_SERIAL
 
 #if !defined(BSP_USING_UART0) && !defined(BSP_USING_UART1) && \
     !defined(BSP_USING_UART2) && !defined(BSP_USING_UART3) && \
@@ -331,5 +330,5 @@ int gd32_hw_usart_init(void)
 
     return 0;
 }
+
 INIT_BOARD_EXPORT(gd32_hw_usart_init);
-#endif

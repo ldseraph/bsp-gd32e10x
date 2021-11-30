@@ -24,7 +24,7 @@ static void uart_isr(struct rt_serial_device *serial);
 
 #if defined(BSP_USING_UART0)
 struct rt_serial_device serial0;
-b
+
 void USART0_IRQHandler(void)
 {
     /* enter interrupt */

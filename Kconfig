@@ -17,3 +17,19 @@ config PKGS_DIR
 
 source "$RTT_DIR/Kconfig"
 source "$PKGS_DIR/Kconfig"
+
+config SOC_SERIES_GD32E1
+    bool
+    select RT_USING_COMPONENTS_INIT
+    select RT_USING_USER_MAIN
+    default y
+
+config BSP_USING_UART0
+    bool "using uart0"
+    select RT_USING_SERIAL
+    default y
+
+config BSP_USING_UART1
+    bool "using uart1"
+    select RT_USING_SERIAL
+    default y

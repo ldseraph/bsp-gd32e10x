@@ -6,7 +6,7 @@
 
 /* RT-Thread Kernel */
 
-#define RT_NAME_MAX 8
+#define RT_NAME_MAX 10
 #define RT_ALIGN_SIZE 4
 #define RT_THREAD_PRIORITY_32
 #define RT_THREAD_PRIORITY_MAX 32
@@ -43,8 +43,8 @@
 #define RT_USING_DEVICE
 #define RT_USING_CONSOLE
 #define RT_CONSOLEBUF_SIZE 128
-#define RT_CONSOLE_DEVICE_NAME "uart"
-#define RT_VER_NUM 0x40004
+#define RT_CONSOLE_DEVICE_NAME "uart1"
+#define RT_VER_NUM 0x40100
 
 /* RT-Thread Components */
 
@@ -75,11 +75,11 @@
 /* Device virtual file system */
 
 #define RT_USING_DFS
+#define DFS_USING_POSIX
 #define DFS_USING_WORKDIR
 #define DFS_FILESYSTEMS_MAX 4
 #define DFS_FILESYSTEM_TYPES_MAX 4
 #define DFS_FD_MAX 16
-#define RT_USING_DFS_DEVFS
 
 /* Device Drivers */
 
@@ -89,15 +89,13 @@
 #define RT_USING_SERIAL_V1
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
-#define RT_USING_PIN
+// #define RT_USING_PIN
 
 /* Using USB */
 
 
 /* POSIX layer and C standard library */
 
-#define RT_USING_LIBC
-#define RT_USING_POSIX
 #define RT_LIBC_USING_TIME
 #define RT_LIBC_DEFAULT_TIMEZONE 8
 
